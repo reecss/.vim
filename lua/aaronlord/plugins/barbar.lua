@@ -27,6 +27,7 @@ return {
 
         -- Close
         { "<A-c>", "<Cmd>BufferClose<CR>", { noremap = true, silent = true } },
+        { "<A-C>", "<Cmd>BufferCloseAllButCurrent<CR>", { noremap = true, silent = true } },
     },
     config = function () 
         vim.g.barbar_auto_setup = false

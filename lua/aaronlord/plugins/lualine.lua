@@ -142,6 +142,13 @@ return {
         }
 
         ins_left {
+            'filename',
+            cond = conditions.buffer_not_empty,
+            color = { fg = colors.blue, gui = 'bold' },
+            path = 1,
+        }
+
+        ins_left {
             'diagnostics',
             sources = { 'nvim_diagnostic' },
             symbols = { error = ' ', warn = ' ', info = ' ' },
